@@ -48,3 +48,4 @@ Route::get('/news', [NewsController::class, 'index'])
 Route::get('/news/card/{id}', [NewsController::class, 'card'])
     ->where('id', '[0-9]+')
     ->name('news::card');
+});
